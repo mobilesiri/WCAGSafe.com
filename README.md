@@ -10,6 +10,7 @@
   🔗 **[wcagsafe.com](https://wcagsafe.com)**
 
   ---
+  <video src="demo.mp4" controls width="600"></video>
 
   ## What it does
 

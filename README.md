@@ -1,121 +1,127 @@
-  # WCAGsafe — WCAG 2.1 AA Accessibility Scanner
+# WCAGsafe — WCAG 2.1 AA Accessibility Scanner
 
-  **WCAGsafe** is a web accessibility scanner that checks websites and PDF      
-  documents
-  against WCAG 2.1 Level AA — the standard referenced by the U.S. Department of 
-  Justice
-  for ADA compliance, by AODA in Canada, and by the European Accessibility Act  
-  (EAA) in the EU.
+**WCAGsafe** is a web accessibility scanner that checks websites and PDF documents against WCAG 2.1 Level AA — the standard referenced by the U.S. Department of Justice for ADA compliance, by AODA in Canada, and by the European Accessibility Act (EAA) in the EU.
 
-  🔗 **[wcagsafe.com](https://wcagsafe.com)**
+🔗 **[wcagsafe.com](https://wcagsafe.com)**
 
-  ---
-  <video src="demo.mp4" controls width="600"></video>
+---
 
-  ## What it does
+<video src="demo.mp4" controls width="600"></video>
 
-  - Scans websites for WCAG 2.1 A and AA violations using **axe-core** — the    
-  same
-    open-source engine behind Google Lighthouse and Chrome DevTools
-  - Scans uploaded PDF documents for accessibility issues: tagging, reading     
-  order,
-    heading structure, alt text, language declaration, and document title       
-  - Runs **PDF/UA** conformance checks (Agency plan)
-  - Generates an **accessibility score (0–100)** with a legal risk indicator    
-    (Low / Medium / High)
-  - Produces **plain-English fix instructions** with HTML code examples —       
-  written for
-    non-developers
-  - Generates a **PDF report** with AI-written executive summary, per-page      
-  breakdown,
-    and per-violation fix instructions
-  - Provides **monthly automated monitoring** with email regression alerts      
+---
 
-  ---
+## The problem
 
-  ## Who it's for
+9,100+ ADA lawsuits were filed in 2024. Most targeted small and mid-size businesses — not Fortune 500 companies. The average settlement runs $25,000–$100,000, and plaintiffs' attorneys typically pursue repeat filers.
 
-  - **Small business owners** — received an ADA demand letter or want to        
-  document
-    good-faith compliance efforts
-  - **Web developers** — fast WCAG audit during development, no browser
-  extension needed
-  - **Web agencies** — deliver client accessibility reports with white-label PDF
-   export
-  - **Government & education** — Section 508 and ADA Title II compliance        
-  - **Canadian businesses** — AODA compliance (Accessibility for Ontarians with 
-  Disabilities Act)
-  - **European businesses** — EU European Accessibility Act (EAA / EN 301 549)  
-  preparation
+The uncomfortable truth: most websites fail basic accessibility checks. Yours might too, and you won't know until you get a demand letter.
 
-  ---
+---
 
-  ## Compliance standards covered
+## What WCAGsafe does
 
-  - **WCAG 2.1 Level A and AA** — international baseline
-  - **ADA (Americans with Disabilities Act)** — U.S. DOJ references WCAG 2.1 AA 
-  - **Section 508** — U.S. federal agency requirement
-  - **AODA** — Ontario, Canada (WCAG 2.0/2.1 AA)
-  - **European Accessibility Act (EAA) / EN 301 549** — EU member states        
-  - **PDF/UA (ISO 14289)** — document accessibility standard
+Paste a URL. Get a full accessibility report in under 60 seconds.
 
-  ---
+- **Accessibility score (0–100)** — know exactly where you stand
+- **Legal risk indicator** — Low, Medium, or High, based on violation severity
+- **Plain-English fix instructions** — written for humans, not just developers
+- **PDF document scanning** — catch the accessibility issues hiding in your forms, handbooks, and reports
+- **Monthly monitoring** — get email alerts the moment your site regresses
+- **PDF report export** — a professional, AI-written report you can share with clients or keep on file
 
-  ## Pricing      
+No browser extension. No installation. No technical knowledge required.
 
-  - **Free** — 3 pages/scan, instant results, no account needed
-  - **Starter** ($7/mo) — 15 pages/scan, fix instructions, PDF scanning, 1      
-  monitored site
-  - **Pro** ($29/mo) — 50 pages/scan, PDF export, PDF scanning, 3 monitored     
-  sites
-  - **Agency** ($99/mo) — 250 pages/scan, PDF/UA check, white-label reports, 5  
-  monitored sites
-  - **One-Time Report** ($29) — 25 pages, full PDF report, no subscription      
-  Free tier requires no account — paste a URL and get instant results.
+---
 
-  ---
+## Why WCAGsafe catches more
 
-  ## Tech
+Most tools — including Google Lighthouse — use the same open-source engine under the hood. They find the obvious violations and stop there.
 
-  - Scanner: **axe-core** (open source, maintained by Deque Systems)
-  - Browser automation: **Playwright** (Chromium headless)
-  - AI explanations: **Groq**
-  - No installation required — fully web-based
+WCAGsafe goes further. We built a second layer of custom checks that catch the violations those tools miss — the exact issues cited in real ADA demand letters:
 
-  ---
+- Meaningless link text ("click here", "read more") that blind users can't navigate
+- Images with filenames as alt text — `IMG_3042.jpg` is not a description
+- Generic page titles that fail screen reader navigation
+- Buttons and links too small to tap on a phone
+- Forms missing autocomplete — a barrier for users with motor disabilities
 
-  ## Resources
+**The result: ~75–80% of detectable WCAG 2.1 AA violations caught** — significantly more than running Lighthouse alone.
 
-  - [Free scanner](https://wcagsafe.com) — paste any URL
-  - [PDF accessibility checker](https://wcagsafe.com/pdf-accessibility-checker) 
-  - [ADA compliance checker](https://wcagsafe.com/ada-compliance-checker)       
-  - [WCAG checker](https://wcagsafe.com/wcag-checker)
-  - [Blog: ADA & WCAG guides](https://wcagsafe.com/blog)
-  - [Pricing](https://wcagsafe.com/pricing)
-  - [LLM/AI discoverability file](https://wcagsafe.com/llms.txt)
+> Any tool claiming 100% automated coverage is misleading you. The remaining ~20–25% requires human judgment. We'll tell you exactly what needs a human eye.
 
-  ---
+---
 
-  ## Selected blog posts
+## PDF scanning — the most overlooked liability
 
-  - [ADA Lawsuit Statistics
-  2025–2026](https://wcagsafe.com/blog/ada-lawsuit-statistics)
-  - [How to Fix WCAG
-  Violations](https://wcagsafe.com/blog/how-to-fix-wcag-violations)
-  - [ADA Title II Deadline April
-  2026](https://wcagsafe.com/blog/ada-title-ii-deadline-april-2026)
-  - [Section 508 Compliance
-  Guide](https://wcagsafe.com/blog/section-508-compliance-guide)
-  - [Accessibility Overlays Don't
-  Work](https://wcagsafe.com/blog/accessibility-overlays-dont-work)
-  - [WCAG 2.2 vs 2.1: What
-  Changed](https://wcagsafe.com/blog/wcag-2-2-vs-wcag-2-1)
-  - [PDF Accessibility for
-  Universities](https://wcagsafe.com/blog/pdf-accessibility-universities)       
+Inaccessible PDFs appear in more ADA complaints than most businesses realize. Job applications, policy documents, intake forms — if a screen reader can't read them, you're exposed.
 
-  ---
+WCAGsafe scans PDFs for the issues that matter: missing text structure, unreadable images, absent language declarations, no navigation bookmarks, and more. Agency plan customers get full **PDF/UA** conformance validation — the gold standard for document accessibility, required by many government contracts.
 
-  *WCAGsafe does not provide legal advice. A passing scan documents good-faith  
-  accessibility efforts but does not guarantee legal compliance.*
+---
 
-  ---
+## Who uses WCAGsafe
+
+- **Small business owners** — got a demand letter, or want to stay ahead of one
+- **Web developers** — fast WCAG audit during development without leaving the browser
+- **Web agencies** — deliver branded accessibility reports to clients
+- **Government & education** — Section 508 and ADA Title II compliance
+- **Canadian businesses** — AODA compliance
+- **European businesses** — EU European Accessibility Act (EAA) readiness
+
+---
+
+## Compliance standards covered
+
+WCAG 2.1 Level A & AA · ADA (U.S.) · Section 508 · AODA (Canada) · EU EAA / EN 301 549 · PDF/UA (ISO 14289)
+
+---
+
+## Pricing
+
+**Free** — 3 pages per scan, instant results, no account needed
+
+**Starter — $7/mo**
+15 pages per scan · full fix instructions · PDF scanning · 1 monitored site
+
+**Pro — $29/mo**
+50 pages per scan · PDF scanning · PDF report export · 3 monitored sites
+
+**Agency — $99/mo**
+250 pages per scan · PDF scanning · PDF/UA conformance check · white-label reports · 5 monitored sites
+
+**One-Time Report — $29**
+25 pages · full PDF report · PDF scanning · no subscription needed
+
+---
+
+## Tech
+
+- Scanner: **axe-core** + WCAGsafe enhanced rules
+- PDF analysis: structural checks + **veraPDF** (PDF/UA, Agency plan)
+- AI explanations: **Groq**
+- Fully web-based — nothing to install
+
+---
+
+## Resources
+
+- [Free scanner](https://wcagsafe.com) — paste any URL
+- [PDF accessibility checker](https://wcagsafe.com/pdf-accessibility-checker)
+- [ADA compliance checker](https://wcagsafe.com/ada-compliance-checker)
+- [Blog: ADA & WCAG guides](https://wcagsafe.com/blog)
+- [Pricing](https://wcagsafe.com/pricing)
+
+---
+
+## Selected blog posts
+
+- [ADA Lawsuit Statistics 2025–2026](https://wcagsafe.com/blog/ada-lawsuit-statistics)
+- [How to Fix WCAG Violations](https://wcagsafe.com/blog/how-to-fix-wcag-violations)
+- [ADA Title II Deadline April 2026](https://wcagsafe.com/blog/ada-title-ii-deadline-april-2026)
+- [Section 508 Compliance Guide](https://wcagsafe.com/blog/section-508-compliance-guide)
+- [Accessibility Overlays Don't Work](https://wcagsafe.com/blog/accessibility-overlays-dont-work)
+- [EU Accessibility Act for Ecommerce](https://wcagsafe.com/blog/eu-accessibility-act-ecommerce)
+
+---
+
+*WCAGsafe does not provide legal advice. A passing scan documents good-faith accessibility efforts but does not guarantee legal compliance.*

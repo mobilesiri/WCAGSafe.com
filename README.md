@@ -65,6 +65,7 @@ WCAGsafe scans PDFs for the issues that matter: missing text structure, unreadab
 - **Web developers** — fast WCAG audit during development without leaving the browser
 - **Web agencies** — deliver branded accessibility reports to clients
 - **Government & education** — Section 508 and ADA Title II compliance
+- **U.S. businesses** — ADA compliance, DOJ-referenced WCAG 2.1 AA standard
 - **Canadian businesses** — AODA compliance
 - **European businesses** — EU European Accessibility Act (EAA) readiness
 
